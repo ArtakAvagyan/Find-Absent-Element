@@ -47,7 +47,7 @@ std::string findMinReang (size_t& st , size_t& end , std::string str)
 {
 	if (st + Util::reng < end )
 	{
-		int mid = ( st + end )/ 2 ;
+		size_t mid = st + ( end - st) ;
 		bool maxOrMin = false ;
 		std::string s = Parmition(mid,str,maxOrMin) ;
 		if (maxOrMin)
